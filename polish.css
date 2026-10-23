@@ -1,0 +1,315 @@
+/* Larger, calmer type for staff who need to scan the unit quickly. */
+body{font-size:15px;line-height:1.45}
+button,a,select,input,textarea{font-family:inherit}
+:focus-visible{outline:3px solid #93c9a4;outline-offset:2px}
+.brand{font-size:21px}
+.nav-item{font-size:13px;min-height:42px}
+.nav-label{font-size:10px}
+.facility-switch small,.profile small{font-size:10px}
+.facility-switch strong,.profile strong{font-size:12px}
+.topbar{min-height:68px}
+.breadcrumb{font-size:12px}
+.live-status{font-size:11px}
+.page-heading h1{font-size:29px}
+.page-subtitle{font-size:14px;line-height:1.5}
+.eyebrow{font-size:10px}
+.button{height:41px;padding:0 15px;font-size:12px}
+.metric-card{min-height:137px;padding:17px 17px 14px}
+.metric-label{font-size:9px;letter-spacing:1px}
+.metric-value strong{font-size:29px}
+.metric-value>span{font-size:12px}
+.metric-foot{font-size:10px}
+.attention-banner{min-height:68px}
+.attention-copy strong{font-size:13px}
+.attention-copy span{font-size:11px}
+.attention-banner button,.text-button{font-size:11px}
+.patient-panel{padding:20px 19px 0}
+.panel-heading h2{font-size:18px}
+.table-controls{margin:17px 0 12px}
+.search-box,.filter-button{height:36px}
+.search-box input,.filter-button{font-size:11px}
+.patient-table thead th{font-size:9px}
+.patient-table td{height:62px;font-size:12px}
+.patient-name strong{font-size:12px}
+.patient-name span{font-size:10px}
+.patient-avatar{height:32px;width:32px;font-size:10px}
+.status-badge{font-size:9px;padding:5px 8px}
+.row-action{height:30px;min-width:58px;font-size:10px}
+.table-footer{font-size:10px}
+.flow-date strong{font-size:11px}
+.flow-date small,.flow-info>span{font-size:10px}
+.flow-info strong{font-size:10px}
+.flow-time{font-size:10px}
+.flow-footer{font-size:10px}
+.outcome-card>p{font-size:10px}
+.page-footer{font-size:10px}
+.role-control{min-height:40px;min-width:174px}
+.role-control span{font-size:10px}
+.role-control select{font-size:12px}
+.phase-bar{min-height:74px}
+.phase-label{font-size:10px}
+.phase-tab{height:41px;font-size:12px;padding:0 14px}
+.phase-number{height:21px;width:21px;font-size:9px}
+.workflow-page{padding-top:31px}
+.workflow-eyebrow{font-size:10px}
+.workflow-head h1{font-size:29px}
+.workflow-head p{font-size:13px;line-height:1.5}
+.summary-tile{padding:16px 17px}
+.summary-tile span{font-size:9px}
+.summary-tile strong{font-size:25px}
+.summary-tile small{font-size:10px}
+.workflow-panel-head{padding:18px 19px 14px}
+.workflow-panel-head h2{font-size:16px}
+.workflow-panel-head p{font-size:10px}
+.workflow-table th{font-size:9px}
+.workflow-table td{height:62px;font-size:11px}
+.role-note{padding:15px}
+.role-note strong,.flow-card-top strong{font-size:12px}
+.role-note p,.flow-card p{font-size:10px;line-height:1.6}
+.workflow-step strong{font-size:11px}
+.workflow-step p{font-size:10px}
+.step-state,.phase-marker{font-size:9px}
+.checklist-row{font-size:11px}
+.modal-content h2{font-size:21px}
+.modal-content>p{font-size:12px}
+.form-field label{font-size:11px}
+.form-field input,.form-field select,.form-field textarea{font-size:12px}
+.modal-actions button{font-size:11px;height:38px}
+.modal.modal-large{width:min(720px,100%);max-height:min(88vh,850px);overflow:auto}
+.chart-patient-head{display:flex;align-items:center;gap:11px;padding:2px 0 15px;border-bottom:1px solid #edf1ef}
+.chart-patient-head>.patient-avatar{width:43px;height:43px;font-size:13px;border-radius:13px;flex:none}
+.chart-patient-name{flex:1;min-width:0}
+.chart-patient-name h2{margin:0 0 2px;font:700 17px 'Manrope',sans-serif;color:#29483a}
+.chart-patient-name>span{font-size:11px;color:#819087}
+.chart-status .status-badge{font-size:9px}
+.patient-tabs{display:flex;gap:4px;border-bottom:1px solid #e9efeb;margin:0 -22px;padding:0 22px;overflow:auto;scrollbar-width:none}
+.patient-tabs::-webkit-scrollbar{display:none}
+.patient-tab{height:42px;position:relative;border:0;background:transparent;padding:0 12px;color:#7b8982;font-size:11px;white-space:nowrap;cursor:pointer}
+.patient-tab.active{color:#347654;font-weight:700}
+.patient-tab.active:after{content:"";position:absolute;bottom:0;left:10px;right:10px;height:2px;background:#459269;border-radius:3px}
+.patient-tab-content{padding:15px 0 2px;min-height:180px}
+.chart-card{padding:14px;border:1px solid #e7eee9;border-radius:10px;background:#fbfdfb;margin-bottom:11px}
+.chart-card-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.chart-card-head>div:first-child strong{display:block;font:700 12px 'Manrope',sans-serif;color:#395647}
+.chart-card-head>div:first-child span{display:block;font-size:9px;color:#8c9992;margin-top:3px}
+.chart-current{background:#edf6ef;color:#4a8060;padding:6px 9px;border-radius:15px;font-size:10px;font-weight:700;white-space:nowrap}
+.chart-current.chart-alert{background:#fff0e9;color:#ae5c4f}
+.patient-chart{margin:7px 0 0;overflow:hidden}
+.patient-chart svg{display:block;width:100%;height:auto;min-height:128px}
+.chart-legend{display:flex;gap:15px;color:#849189;font-size:9px;padding:0 3px}
+.chart-legend span{display:flex;align-items:center;gap:6px}
+.chart-legend i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#4d9970}
+.chart-legend span+span i{height:2px;width:11px;border-radius:0;background:#d9a070}
+.fever-milestone{border:1px solid #e7eee9;border-radius:10px;padding:13px 14px;background:#fff}
+.milestone-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.milestone-head>div strong{display:block;font:700 11px 'Manrope',sans-serif;color:#395647}
+.milestone-head>div span{display:block;font-size:9px;color:#8b9891;margin-top:3px}
+.milestone-head>b{font:700 17px 'Manrope',sans-serif;color:#347654;white-space:nowrap}
+.milestone-head>b small{font:500 9px 'DM Sans',sans-serif;color:#87958e}
+.fever-steps{display:flex;align-items:center;margin-top:12px;gap:0}
+.fever-step{position:relative;display:flex;align-items:center;gap:6px;flex:1;color:#99a59e;font-size:9px}
+.fever-step:not(:last-child):after{content:"";height:1px;background:#e5ece7;flex:1;margin:0 8px}
+.fever-step i{height:21px;width:21px;border:1px solid #dfe8e1;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:9px;background:#fff;color:#849189}
+.fever-step.complete i{background:#e8f4eb;border-color:#cbe3d1;color:#39805a}
+.fever-step.complete{color:#4e8060}
+.detail-stats{gap:9px;margin:0 0 11px}
+.detail-stat{border:1px solid #e9efeb}
+.detail-stat span{font-size:8px;letter-spacing:.45px}
+.detail-stat strong{font-size:13px}
+.care-plan-copy{font-size:12px;line-height:1.6;color:#607168;white-space:pre-wrap}
+.follow-up-row{display:flex;justify-content:space-between;border-top:1px solid #e9efeb;padding-top:10px;margin:12px 0;color:#829088;font-size:10px}
+.follow-up-row strong{color:#476453}
+.detail-timeline{display:grid;gap:0;padding:3px 2px}
+.timeline-entry{display:grid;grid-template-columns:14px 1fr;gap:10px;position:relative;padding-bottom:18px}
+.timeline-entry:not(:last-child):before{content:"";position:absolute;top:13px;bottom:0;left:5px;width:1px;background:#e3ece5}
+.timeline-entry>i{position:relative;z-index:1;height:11px;width:11px;border-radius:50%;background:#70aa80;border:2px solid #e8f3eb;margin-top:2px}
+.timeline-entry strong{display:block;font-size:11px;color:#40594a}
+.timeline-entry span{display:block;font-size:10px;color:#89958f;margin-top:3px;line-height:1.4}
+.chart-actions{border-top:1px solid #edf1ef;padding-top:12px}
+.chart-action-note{align-self:center;color:#909c95;font-size:9px;margin-right:auto}
+.handoff-composer{margin-top:15px;padding:13px;border-radius:10px;background:#f6f9f6;border:1px solid #e5ede7}
+.handoff-composer>label{display:block;font-size:11px;font-weight:700;color:#4a6153;margin-bottom:7px}
+.handoff-composer textarea{width:100%;min-height:76px;border:1px solid #e1e9e3;border-radius:8px;padding:10px;resize:vertical;font-size:11px;color:#3e5548;background:#fff;outline:none}
+.handoff-composer textarea:focus{border-color:#7eb393;box-shadow:0 0 0 3px #e8f4ec}
+.handoff-checks{display:flex;flex-wrap:wrap;gap:7px;margin:9px 0 12px}
+.handoff-checks label{display:flex;align-items:center;gap:5px;background:#fff;border:1px solid #e4ebe6;border-radius:16px;padding:6px 9px;font-size:9px;color:#6f7f76}
+.handoff-checks input{accent-color:#43845c;margin:0}
+.handoff-checks b{font-size:9px;color:#426b50}
+.handoff-submit{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.handoff-submit>span{font-size:9px;color:#87948d}
+.handoff-submit .button{height:36px;font-size:10px}
+
+/* Phone layout: keep the role navigation visible in a horizontal strip. */
+@media(max-width:760px){
+  .app-shell{display:block;min-height:100vh}
+  .sidebar{position:sticky;top:0;z-index:15;width:100%;min-width:0;min-height:0;height:auto;max-height:none;overflow:hidden;display:flex;flex-direction:row;align-items:center;gap:13px;padding:10px 13px 9px;border-right:0;border-bottom:1px solid #e6ede8}
+  .brand{flex:none;height:31px;margin:0;gap:7px;font-size:17px}
+  .brand>span:last-child{font-size:inherit}
+  .brand-mark{height:21px;width:21px}
+  .facility-switch,.sidebar>.nav-label,.sidebar>nav[aria-label="Reporting navigation"],.sidebar-spacer,.help-card,.profile{display:none!important}
+  #role-navigation{display:flex;flex:1;min-width:0;overflow-x:auto;gap:5px;scrollbar-width:none}
+  #role-navigation::-webkit-scrollbar{display:none}
+  #role-navigation .nav-item{display:flex;flex:none;justify-content:center;min-height:36px;height:36px;width:auto;padding:0 10px;font-size:11px;white-space:nowrap;gap:6px;border-radius:8px}
+  #role-navigation .nav-icon{width:auto;font-size:14px}
+  #role-navigation .nav-count,#role-navigation .nav-pill{display:inline-flex;font-size:9px}
+  #role-navigation .nav-dot{display:block}
+  .main-content{width:100%;min-width:0}
+  .topbar{height:auto;min-height:57px;padding:8px 13px;gap:8px}
+  .breadcrumb{font-size:11px;white-space:nowrap}
+  .breadcrumb span{margin:0 5px}
+  .top-actions{gap:9px}
+  .live-status{display:none}
+  .icon-button{font-size:18px}
+  .role-control{height:35px;min-height:35px;min-width:0;padding:0 8px}
+  .role-control span{display:none}
+  .role-control select{font-size:11px}
+  .phase-bar{position:sticky;top:55px;z-index:10;min-height:57px;padding:7px 12px;gap:5px;overflow-x:auto;scrollbar-width:none}
+  .phase-bar::-webkit-scrollbar{display:none}
+  .phase-label,.phase-arrow{display:none}
+  .phase-tab{height:37px;flex:none;white-space:nowrap;padding:0 10px;font-size:11px}
+  .phase-number{height:19px;width:19px}
+  .content-wrap{padding:22px 13px 18px}
+  .page-heading{gap:12px;margin-bottom:18px}
+  .page-heading h1{font-size:25px}
+  .page-subtitle{font-size:13px}
+  .eyebrow{font-size:9px}
+  .heading-actions{width:100%;gap:8px}
+  .heading-actions .button{flex:1;height:39px;font-size:11px}
+  .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-bottom:12px}
+  .metric-card{min-height:125px;padding:13px 11px}
+  .metric-label{font-size:8px;letter-spacing:.7px}
+  .metric-value{gap:5px;margin-top:10px}
+  .metric-value strong{font-size:25px}
+  .metric-value>span{font-size:10px}
+  .metric-foot{font-size:9px;gap:5px;align-items:flex-start}
+  .metric-foot-single{margin-top:15px}
+  .attention-banner{align-items:flex-start;gap:9px;padding:11px;margin-bottom:14px}
+  .attention-copy strong{font-size:11px;line-height:1.35}
+  .attention-copy span{font-size:10px;line-height:1.4}
+  .attention-banner button{font-size:9px;white-space:nowrap;padding:5px 0}
+  .banner-spark{right:12%;opacity:.55}
+  .section-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+  .patient-panel{padding:15px 11px 0;margin:0}
+  .panel-heading h2{font-size:16px}
+  .text-button{font-size:10px}
+  .search-box{width:min(58%,250px);height:35px}
+  .filter-button{height:35px;font-size:10px}
+  .patient-table{min-width:650px}
+  .patient-table td{height:59px}
+  .right-column{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+  .rounds-panel{padding:15px 13px 0}
+  .outcome-card{padding:16px}
+  .page-footer{font-size:9px;gap:9px;line-height:1.4}
+  .workflow-page{padding:20px 13px}
+  .workflow-head{gap:13px;margin-bottom:16px}
+  .workflow-head h1{font-size:23px}
+  .workflow-head p{font-size:12px}
+  .workflow-summary{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-bottom:12px}
+  .summary-tile{padding:11px 9px;min-width:0}
+  .summary-tile span{font-size:7px;letter-spacing:.45px;line-height:1.3}
+  .summary-tile strong{font-size:18px;margin:7px 0 2px}
+  .summary-tile small{font-size:8px;line-height:1.3}
+  .workflow-layout{grid-template-columns:minmax(0,1fr);gap:11px}
+  .workflow-panel-head{padding:14px 12px 12px;gap:8px}
+  .workflow-panel-head h2{font-size:14px}
+  .workflow-panel-head p{font-size:9px;line-height:1.4}
+  .workflow-table{min-width:580px}
+  .workflow-table th{font-size:8px;padding:9px}
+  .workflow-table td{height:59px;padding:7px 9px}
+  .workflow-panel-body{padding:12px}
+  .workflow-step{padding:10px;gap:8px}
+  .workflow-step p{font-size:9px}
+  .role-note{padding:13px}
+  .chart-panel{padding:13px}
+  .modal.modal-large{width:min(720px,100%);max-height:calc(100dvh - 20px);padding:17px 15px;overflow:auto}
+  .patient-tabs{margin:0 -15px;padding:0 12px}
+  .patient-tab{padding:0 9px;font-size:10px}
+  .chart-card{padding:11px}
+  .patient-chart svg{min-height:105px}
+  .chart-legend{font-size:8px;gap:10px}
+  .milestone-head>div span{font-size:8px;line-height:1.35}
+  .fever-step{gap:4px;font-size:8px}
+  .fever-step:not(:last-child):after{margin:0 4px}
+  .handoff-composer{padding:10px}
+  .handoff-checks{gap:5px}
+  .handoff-checks label{font-size:8px;padding:6px 7px}
+  .handoff-submit{align-items:flex-start;flex-direction:column}
+  .handoff-submit .button{width:100%}
+}
+@media(max-width:420px){
+  .brand{font-size:0;gap:0}
+  .brand-mark{width:24px;height:24px}
+  .sidebar{gap:8px;padding-left:10px;padding-right:9px}
+  #role-navigation .nav-item{padding:0 8px;font-size:10px;gap:5px}
+  .phase-tab{font-size:10px;padding:0 8px;gap:6px}
+  .topbar{padding-left:10px;padding-right:10px}
+  .breadcrumb{font-size:10px}
+  .metric-card{padding:11px 9px}
+  .metric-label{font-size:7px}
+  .metric-value strong{font-size:23px}
+  .metric-foot{font-size:8px}
+  .foot-status{gap:4px}
+  .page-footer{flex-direction:column}
+  .workflow-summary{gap:5px}
+  .summary-tile{padding:9px 7px}
+  .summary-tile strong{font-size:16px}
+}
+
+/* Priority inbox and final responsive pass for clinical workstation use. */
+.inbox-list{display:grid;gap:7px;max-height:min(52vh,430px);overflow:auto;padding:1px 2px}
+.inbox-item{width:100%;min-height:58px;display:flex;align-items:center;gap:11px;padding:10px 12px;border:1px solid #e8eeea;border-radius:9px;background:#fff;text-align:left;cursor:pointer;transition:background .15s,border-color .15s}
+.inbox-item:hover{background:#f7faf7;border-color:#cddfd2}
+.inbox-priority{width:9px;height:9px;flex:none;border-radius:50%;background:#d6a455;box-shadow:0 0 0 4px #fbf4e8}
+.inbox-priority.inbox-urgent{background:#c86d5d;box-shadow:0 0 0 4px #fbefec}
+.inbox-priority.inbox-review{background:#8476ad;box-shadow:0 0 0 4px #f2f0f8}
+.inbox-copy{min-width:0;flex:1}
+.inbox-copy strong,.inbox-copy small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.inbox-copy strong{font-size:12px;color:#40594a}
+.inbox-copy small{font-size:10px;color:#829088;margin-top:4px}
+.inbox-chevron{font-size:20px;color:#8a9a90}
+.inbox-empty{padding:26px;text-align:center;border:1px dashed #dfe9e2;border-radius:9px;color:#78887f;font-size:12px}
+.route-search{height:40px;display:flex;align-items:center;gap:8px;margin:13px 14px 3px;padding:0 11px;border:1px solid #e4ebe6;border-radius:8px;color:#84928a}
+.route-search input{width:100%;border:0;outline:0;background:transparent;color:#40594a;font:12px 'DM Sans',sans-serif}
+.route-search:focus-within{border-color:#7eb393;box-shadow:0 0 0 3px #e8f4ec}
+.route-search input::placeholder{color:#9aa69f}
+.modal-content h2{font-size:22px}
+.modal-content>p{font-size:13px}
+.button,.row-action,.modal-actions button{font-size:12px}
+.patient-table td,.workflow-table td{font-size:12px}
+.patient-name strong{font-size:13px}
+.patient-name span,.workflow-table .patient-name span{font-size:11px}
+.status-badge{font-size:10px}
+.metric-label,.section-kicker,.outcome-kicker{font-size:10px}
+.metric-foot,.table-footer,.page-footer{font-size:11px}
+.search-box input,.filter-button{font-size:12px}
+.flow-info strong{font-size:11px}
+.flow-info>span,.flow-date small{font-size:10px}
+@media(max-width:760px){
+  .phase-bar{top:55px}
+  .page-heading h1{font-size:26px}
+  .page-subtitle,.workflow-head p{font-size:14px}
+  .workflow-table td,.patient-table td{font-size:12px}
+  .patient-name strong{font-size:13px}
+  .patient-name span{font-size:11px}
+  .workflow-table th,.patient-table thead th{font-size:9px}
+  .metric-label{font-size:9px}
+  .metric-foot,.table-footer{font-size:10px}
+  .summary-tile span{font-size:8px}
+  .summary-tile small{font-size:9px}
+  .workflow-step strong{font-size:12px}
+  .workflow-step p,.role-note p{font-size:11px}
+  .phase-tab{font-size:12px}
+  .patient-tab{font-size:11px}
+  .inbox-copy strong{font-size:12px}
+  .inbox-copy small{font-size:10px}
+}
+@media(max-width:420px){
+  .page-heading h1{font-size:24px}
+  .metric-label{font-size:8px}
+  .metric-foot{font-size:9px}
+  .summary-tile span{font-size:7px}
+  .summary-tile small{font-size:8px}
+  .phase-bar{top:55px}
+  .inbox-item{padding:9px}
+  .route-search{margin:10px 9px 3px}
+}

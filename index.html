@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f7f5" />
+    <meta name="description" content="CareTrack helps clinical teams coordinate daily patient checks, doctor rounds and discharge readiness." />
+    <title>CareTrack | Clinical operations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="interaction.css" />
+    <link rel="stylesheet" href="workflow.css" />
+    <link rel="stylesheet" href="polish.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#home" aria-label="CareTrack home"><span class="brand-mark"><i></i><i></i><i></i><i></i></span><span>caretrack<span class="brand-dot">.</span></span></a>
+        <div class="facility-switch"><span class="facility-icon">✳</span><span><small>FACILITY</small><strong>North Wing</strong></span><span class="chevron">⌄</span></div>
+        <p class="nav-label">WORKSPACE</p>
+        <nav class="nav-list" id="role-navigation" aria-label="Role workspace navigation"></nav>
+        <p class="nav-label nav-label-lower">REPORTING</p>
+        <nav class="nav-list" aria-label="Reporting navigation"><a class="nav-item" href="#outcomes" data-route="outcomes"><span class="nav-icon">⌁</span>Outcomes</a><a class="nav-item" href="#activity" data-route="activity"><span class="nav-icon">▤</span>Activity log</a></nav>
+        <div class="sidebar-spacer"></div>
+        <div class="help-card"><span class="help-spark">✳</span><strong>Need a hand?</strong><p>Quick guides for your shift are always here.</p><button id="guide-button">Open shift guide <span>↗</span></button></div>
+        <div class="profile"><div class="avatar avatar-sage">AM</div><div><strong>Alex Morgan</strong><small>Charge nurse</small></div><button class="more-button" aria-label="Profile options">···</button></div>
+      </aside>
+
+      <main class="main-content" id="home">
+        <header class="topbar"><div class="breadcrumb">North Wing <span>/</span> <strong id="breadcrumb-page">Overview</strong></div><div class="top-actions"><div class="live-status"><span></span> Demo environment</div><button class="icon-button" id="notification-button" aria-label="Notifications">♧<i></i></button><label class="role-control"><span>Viewing as</span><select id="role-select" aria-label="Choose a demo role"><option>Nurse</option><option>Doctor</option><option>Admin</option></select></label></div></header>
+        <div class="phase-bar" id="phase-bar"></div>
+        <div class="content-wrap" id="dashboard-view">
+          <section class="page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> <span id="today-label"></span> <span class="weather">☀ 24°</span></div><h1>Good morning, Alex <span class="wave">✳</span></h1><p class="page-subtitle">Here’s your unit at a glance. Let’s make today a little easier.</p></div><div class="heading-actions"><button class="button button-quiet" id="export-button"><span>↓</span> Export report</button><button class="button button-primary" id="add-patient-button"><span>＋</span> Add patient</button></div></section>
+
+          <section class="metric-grid" aria-label="Unit summary">
+            <article class="metric-card occupancy-card"><div class="metric-top"><span class="metric-label">UNIT OCCUPANCY</span><span class="metric-icon green-icon">⌂</span></div><div class="metric-value"><strong id="occupancy-value">74</strong><span>/ 74 beds</span></div><div class="occupancy-track"><span style="width:100%"></span></div><div class="metric-foot"><span class="foot-status"><i></i> At capacity</span><span>0 beds available</span></div></article>
+            <article class="metric-card"><div class="metric-top"><span class="metric-label">TEMPERATURE CHECKS</span><span class="metric-icon blue-icon">⌁</span></div><div class="metric-value"><strong id="temp-progress">58</strong><span>/ 74 completed</span></div><div class="metric-track"><span id="temp-track" style="width:78%"></span></div><div class="metric-foot"><span class="foot-status blue-text"><i></i> <b id="temp-remaining">16</b> still to check</span><span>Today</span></div></article>
+            <article class="metric-card"><div class="metric-top"><span class="metric-label">DOCTOR ROUNDS</span><span class="metric-icon violet-icon">＋</span></div><div class="metric-value"><strong id="round-progress">42</strong><span>/ 74 visited</span></div><div class="metric-track violet-track"><span id="round-track" style="width:57%"></span></div><div class="metric-foot"><span class="foot-status violet-text"><i></i> <b id="round-remaining">32</b> patients remaining</span><span>Today</span></div></article>
+            <article class="metric-card"><div class="metric-top"><span class="metric-label">READY FOR REVIEW</span><span class="metric-icon amber-icon">↗</span></div><div class="metric-value"><strong id="discharge-count">3</strong><span>patients</span></div><div class="metric-foot metric-foot-single"><span class="foot-status amber-text"><i></i> 3 full fever-free days</span><a href="#discharge">Review queue <span>→</span></a></div></article>
+          </section>
+
+          <section class="attention-banner"><div class="attention-icon">!</div><div class="attention-copy"><strong>16 temperature checks are still open</strong><span>Help your team stay on track before doctor rounds begin.</span></div><button id="view-due-button">View patients <span>→</span></button><span class="banner-spark">✳</span></section>
+
+          <div class="section-grid">
+            <section class="panel patient-panel" id="patients"><div class="panel-heading"><div><div class="section-kicker">YOUR UNIT</div><h2>Patients today <span class="heading-count" id="table-count">8</span></h2></div><button class="text-button" id="all-patients-button">View all patients <span>→</span></button></div>
+              <div class="table-controls"><div class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Search patient or room" aria-label="Search patient or room" /></div><div class="filter-wrap"><button class="filter-button" id="filter-button">☷ <span id="filter-label">All patients</span> <span class="chevron">⌄</span></button><div class="filter-menu hidden" id="filter-menu"><button data-filter="all">All patients</button><button data-filter="due">Check due</button><button data-filter="round">Doctor visit due</button><button data-filter="review">Discharge review</button></div></div></div>
+              <div class="patient-table-wrap" id="patient-table-wrap"><table class="patient-table"><thead><tr><th>PATIENT</th><th>ROOM</th><th>TEMPERATURE</th><th>DOCTOR VISIT</th><th>STATUS</th><th></th></tr></thead><tbody id="patient-rows"></tbody></table><div class="empty-state hidden" id="empty-state">No patients match this view.</div></div>
+              <div class="table-footer"><span>Showing <strong id="showing-count">8</strong> of 74 patients</span><button id="page-prev" aria-label="Previous page" disabled>←</button><span class="page-current">1</span><button id="page-next" aria-label="Next page">→</button></div>
+            </section>
+            <aside class="right-column">
+              <section class="panel rounds-panel" id="rounds"><div class="panel-heading compact-heading"><div><div class="section-kicker">STAY AHEAD</div><h2>Today’s flow</h2></div><button class="dots-button" aria-label="More options">···</button></div><div class="flow-date"><span class="date-icon">▣</span><span><strong>Thursday, Oct 23</strong><small>Day shift · 7:00 AM – 7:00 PM</small></span><span class="live-dot"></span></div><div class="flow-list"><div class="flow-item"><div class="flow-time">7:00<span>AM</span></div><div class="flow-rail"><span class="rail-dot rail-done">✓</span><i></i></div><div class="flow-info"><strong>Shift handover</strong><span>Completed by Alex Morgan</span></div><span class="flow-check">✓</span></div><div class="flow-item"><div class="flow-time">8:00<span>AM</span></div><div class="flow-rail"><span class="rail-dot rail-active">•</span><i></i></div><div class="flow-info"><strong>Morning temperature checks</strong><span>58 of 74 patients recorded</span><div class="mini-progress"><span style="width:78%"></span></div></div><span class="flow-arrow">→</span></div><div class="flow-item"><div class="flow-time">9:30<span>AM</span></div><div class="flow-rail"><span class="rail-dot rail-upcoming"></span><i></i></div><div class="flow-info"><strong>Doctor rounds</strong><span>42 of 74 visits complete</span></div><span class="flow-arrow">→</span></div><div class="flow-item"><div class="flow-time">Anytime</div><div class="flow-rail"><span class="rail-dot rail-later">↗</span></div><div class="flow-info"><strong>Discharge reviews</strong><span>3 patients ready for review</span></div><span class="flow-arrow">→</span></div></div><button class="flow-footer" id="full-schedule-button">View full schedule <span>→</span></button></section>
+              <section class="outcome-card" id="outcomes"><div class="outcome-top"><div><div class="outcome-kicker">CARE OUTCOMES · DEMO DATA</div><h2>Every day counts.</h2></div><span class="outcome-star">✳</span></div><p>Illustrative recovery rate</p><div class="outcome-rate"><strong>86.4<span>%</span></strong><span class="rate-change">↗ 2.1% <small>sample trend</small></span></div><div class="sparkline"><svg viewBox="0 0 300 45" preserveAspectRatio="none" aria-label="Illustrative recovery rate trend"><path d="M0 35 C18 30 28 36 42 27 S64 24 77 29 S96 14 112 21 S132 25 145 18 S165 20 178 12 S198 19 212 11 S233 16 245 8 S266 14 279 6 S292 9 300 3" fill="none" stroke="#a9d9c7" stroke-width="2.5"/><path d="M0 35 C18 30 28 36 42 27 S64 24 77 29 S96 14 112 21 S132 25 145 18 S165 20 178 12 S198 19 212 11 S233 16 245 8 S266 14 279 6 S292 9 300 3 L300 45 L0 45Z" fill="url(#fade)"/><defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d9c7" stop-opacity=".26"/><stop offset="1" stop-color="#a9d9c7" stop-opacity="0"/></linearGradient></defs></svg></div><div class="outcome-foot"><span><i></i> Sample above 85% benchmark</span><a href="#outcomes">View outcomes →</a></div></section>
+            </aside>
+          </div>
+          <footer class="page-footer"><span><span class="footer-mark">✳</span> Thoughtful care, one shift at a time.</span><span>Last synced just now <i></i></span></footer>
+        </div>
+        <div class="content-wrap route-content hidden" id="route-view"></div>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="modal-backdrop hidden" id="modal-backdrop"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-top"><span class="modal-symbol" id="modal-symbol">✳</span><button class="close-modal" id="close-modal" aria-label="Close dialog">×</button></div><div class="modal-content" id="modal-content"></div></section></div>
+    <script src="app.js"></script>
+  </body>
+</html>
